@@ -1,0 +1,10 @@
+{% extends 'app_concesionario/base.html' %}
+{% block title %}Nuevo Vendedor{% endblock %}
+{% block content %}
+    <h2>Registrar Nuevo Vendedor</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+{% endblock %}

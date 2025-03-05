@@ -31,13 +31,20 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
     'app_concesionario',
+=======
+>>>>>>> 01cedf91b955b0a2db1f169fb2075356272e7d0d
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
+=======
+    'app_concesionario',
+>>>>>>> 01cedf91b955b0a2db1f169fb2075356272e7d0d
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,21 @@
+
+{% extends 'app_concesionario/base.html' %}
+{% block title %}Buscar Modelo{% endblock %}
+{% block content %}
+    <h2>Buscar Modelo de Auto</h2>
+    <form method="get">
+        {{ form.as_p }}
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if resultados %}
+        <h3>Resultados:</h3>
+        <ul>
+            {% for modelo in resultados %}
+                <li>{{ modelo.marca }} - {{ modelo.modelo }} ({{ modelo.anio }})</li>
+            {% empty %}
+                <li>No se encontraron modelos.</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
