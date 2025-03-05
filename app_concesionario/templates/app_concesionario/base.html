@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Concesionario{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Concesionario de Automóviles</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'crear_cliente' %}">Nuevo Cliente</a></li>
+                <li><a href="{% url 'crear_modelo' %}">Nuevo Modelo</a></li>
+                <li><a href="{% url 'crear_vendedor' %}">Nuevo Vendedor</a></li>
+                <li><a href="{% url 'buscar_modelo' %}">Buscar Modelo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

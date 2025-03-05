@@ -1,0 +1,10 @@
+{% extends 'app_concesionario/base.html' %}
+{% block title %}Nuevo Modelo de Auto{% endblock %}
+{% block content %}
+    <h2>Registrar Nuevo Modelo de Auto</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+{% endblock %}
